@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topics - Tech Learning Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><span class="bracket">&lt;/&gt;</span> Tech Learning <span class="hub">Hub</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="topics.html" class="active">Topics</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="mode-toggle">
+    ☀️
+    <div class="switch on" id="modeSwitch" onclick="toggleMode()"><div class="knob"></div></div>
+    <span id="modeLabel">Dark Mode</span>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>Topics</h1>
+  <p>Pick a path and start learning. Each topic links straight to free lessons on W3Schools.</p>
+</section>
+
+<main>
+  <div class="grid3">
+    <div class="topic-card html">
+      <div class="topic-icon html"><img src="https://placehold.co/60x60/e34c26/ffffff?text=HTML" alt="HTML icon"></div>
+      <h3>HTML</h3>
+      <ul>
+        <li>Tags, elements & attributes</li>
+        <li>Headings, paragraphs & links</li>
+        <li>Images, lists & tables</li>
+        <li>Forms & semantic HTML</li>
+      </ul>
+      <a class="pill-btn html" href="https://www.w3schools.com/html/" target="_blank" rel="noopener">Explore HTML</a>
+    </div>
+    <div class="topic-card css">
+      <div class="topic-icon css"><img src="https://placehold.co/60x60/264de4/ffffff?text=CSS" alt="CSS icon"></div>
+      <h3>CSS</h3>
+      <ul>
+        <li>Selectors & properties</li>
+        <li>Box model & layout</li>
+        <li>Flexbox & Grid</li>
+        <li>Animations & transitions</li>
+      </ul>
+      <a class="pill-btn css" href="https://www.w3schools.com/css/" target="_blank" rel="noopener">Explore CSS</a>
+    </div>
+    <div class="topic-card js">
+      <div class="topic-icon js"><img src="https://placehold.co/60x60/f0db4f/0a0e27?text=JS" alt="JavaScript icon"></div>
+      <h3>JavaScript</h3>
+      <ul>
+        <li>Variables & functions</li>
+        <li>DOM manipulation</li>
+        <li>Events & listeners</li>
+        <li>Arrays, objects & loops</li>
+      </ul>
+      <a class="pill-btn js" href="https://www.w3schools.com/js/" target="_blank" rel="noopener">Explore JS</a>
+    </div>
+  </div>
+
+  <h2 class="section-title">More Topics</h2>
+  <div class="section-underline"></div>
+  <div class="grid3">
+    <div class="topic-card html">
+      <div class="topic-icon html"><img src="https://placehold.co/60x60/e34c26/ffffff?text=RWD" alt="Responsive Web Design icon"></div>
+      <h3>Responsive Web Design</h3>
+      <p>Learn to build pages that look great on any screen size, from mobile to desktop.</p>
+      <a class="pill-btn html" href="https://www.w3schools.com/css/css_rwd_intro.asp" target="_blank" rel="noopener">Learn RWD</a>
+    </div>
+    <div class="topic-card css">
+      <div class="topic-icon css"><img src="https://placehold.co/60x60/264de4/ffffff?text=BS" alt="Bootstrap icon"></div>
+      <h3>Bootstrap</h3>
+      <p>Speed up your styling using the most popular CSS framework on the web.</p>
+      <a class="pill-btn css" href="https://www.w3schools.com/bootstrap5/" target="_blank" rel="noopener">Learn Bootstrap</a>
+    </div>
+    <div class="topic-card js">
+      <div class="topic-icon js"><img src="https://placehold.co/60x60/f0db4f/0a0e27?text=SQL" alt="SQL icon"></div>
+      <h3>SQL Basics</h3>
+      <p>Understand how websites store and fetch data using databases.</p>
+      <a class="pill-btn js" href="https://www.w3schools.com/sql/" target="_blank" rel="noopener">Learn SQL</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>About</h4>
+      <p>Tech Learning Hub is created to help beginners learn web development in a simple and practical way.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">HTML Guide</a></li>
+        <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener">CSS Guide</a></li>
+        <li><a href="https://www.w3schools.com/js/" target="_blank" rel="noopener">JavaScript Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect With Us</h4>
+      <div class="socials">
+        <a href="https://github.com" target="_blank" rel="noopener">GH</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener">YT</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">in</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">© 2024 Tech Learning Hub. All rights reserved.</div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
