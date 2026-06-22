@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Tech Learning Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><span class="bracket">&lt;/&gt;</span> Tech Learning <span class="hub">Hub</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="topics.html">Topics</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <div class="mode-toggle">
+    ☀️
+    <div class="switch on" id="modeSwitch" onclick="toggleMode()"><div class="knob"></div></div>
+    <span id="modeLabel">Dark Mode</span>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>Contact Us</h1>
+  <p>Have a question or feedback? Send us a message, we'd love to hear from you.</p>
+</section>
+
+<main>
+  <div class="contact-wrap">
+    <form class="contact-form" onsubmit="handleContactSubmit(event)">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required placeholder="Enter your name">
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required placeholder="Enter your email">
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required placeholder="Write your message..."></textarea>
+
+      <button type="submit" class="action-btn" style="margin-top:18px;">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <div class="item">
+        <div class="icon">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <p>hello@techlearninghub.com</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">📍</div>
+        <div>
+          <h4>Location</h4>
+          <p>Chennai, Tamil Nadu, India</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">⏰</div>
+        <div>
+          <h4>Support Hours</h4>
+          <p>Mon - Fri, 9 AM - 6 PM</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">🌐</div>
+        <div>
+          <h4>Follow Us</h4>
+          <div class="socials" style="margin-top:8px;">
+            <a href="https://github.com" target="_blank" rel="noopener">GH</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener">YT</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">in</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>About</h4>
+      <p>Tech Learning Hub is created to help beginners learn web development in a simple and practical way.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">HTML Guide</a></li>
+        <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener">CSS Guide</a></li>
+        <li><a href="https://www.w3schools.com/js/" target="_blank" rel="noopener">JavaScript Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect With Us</h4>
+      <div class="socials">
+        <a href="https://github.com" target="_blank" rel="noopener">GH</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener">YT</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">in</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">© 2024 Tech Learning Hub. All rights reserved.</div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

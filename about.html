@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Tech Learning Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><span class="bracket">&lt;/&gt;</span> Tech Learning <span class="hub">Hub</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="topics.html">Topics</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="mode-toggle">
+    ☀️
+    <div class="switch on" id="modeSwitch" onclick="toggleMode()"><div class="knob"></div></div>
+    <span id="modeLabel">Dark Mode</span>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>About Tech Learning Hub</h1>
+  <p>We help beginners learn web development step by step, with simple lessons and hands-on practice.</p>
+</section>
+
+<main>
+  <div class="about-block">
+    <div class="about-image">
+      <img src="about-hero.png" alt="Person typing on a laptop surrounded by HTML, CSS and JS icons">
+    </div>
+    <div class="text">
+      <h2>Our Mission</h2>
+      <p>Tech Learning Hub was created with one goal: make web development easy to learn for absolute beginners.
+      We believe anyone can learn to code if the lessons are simple, practical, and broken down into small steps.
+      From your very first HTML tag to building full interactive websites, we guide you through every stage.</p>
+    </div>
+    <div class="text">
+      <h2>What We Offer</h2>
+      <p>Step-by-step tutorials on HTML, CSS, and JavaScript, hands-on practice exercises, curated resources from
+      trusted sites like W3Schools and MDN, and a community-friendly space to keep you motivated while you build
+      your first projects.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Why Learn With Us</h2>
+  <div class="section-underline"></div>
+  <div class="grid3">
+    <div class="values-card">
+      <div class="icon">🎯</div>
+      <h4>Beginner Focused</h4>
+      <p>No prior experience needed. We start from the absolute basics and build up gradually.</p>
+    </div>
+    <div class="values-card">
+      <div class="icon">🛠️</div>
+      <h4>Practice First</h4>
+      <p>Every topic comes with practical examples so you learn by doing, not just reading.</p>
+    </div>
+    <div class="values-card">
+      <div class="icon">🌐</div>
+      <h4>Trusted Resources</h4>
+      <p>We link out to the best free resources on the web like W3Schools and MDN Web Docs.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>About</h4>
+      <p>Tech Learning Hub is created to help beginners learn web development in a simple and practical way.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">HTML Guide</a></li>
+        <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener">CSS Guide</a></li>
+        <li><a href="https://www.w3schools.com/js/" target="_blank" rel="noopener">JavaScript Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect With Us</h4>
+      <div class="socials">
+        <a href="https://github.com" target="_blank" rel="noopener">GH</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener">YT</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">in</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">© 2024 Tech Learning Hub. All rights reserved.</div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
